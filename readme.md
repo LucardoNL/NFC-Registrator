@@ -2,7 +2,9 @@
 By: Luuk Leeuwenstein
 
 ## Goal
-This small Python command prompt application for Windows will allow you to use ACR122U USB NFC Scanners to set-up a registration or clock-in system. Ensure that the NFC tags used are compatible with this scanner. 
+This small Python command prompt application for Windows will allow you to use ACR122U USB NFC Scanners to set-up a registration or clock-in system, based on a premade object or entrant csv list. Ensure that the NFC tags used are compatible with this scanner. 
+
+Made for Anthony Veder Rederijzaken B.V.
 
 ## Requirements
 ### Package
@@ -10,7 +12,7 @@ This small Python command prompt application for Windows will allow you to use A
 * [NFCpy 0.13.2](https://nfcpy.readthedocs.io/en/latest/)
 
 ### Running
-To run the app, you will need to replace the built in driver for the USB NFC reader with a more generic winUSB driver. I use [Zadig](http://zadig.akeo.ie/) for this step. 
+To run the app, you will need to replace the built in driver for the USB NFC reader with a more generic winUSB driver. You could use a tool like [Zadig](http://zadig.akeo.ie/) for this step. 
 
 Additionally, for generating an executable [libusb-win32](https://sourceforge.net/projects/libusb-win32/) is required. Place the `libusb1.0.dll` file in the root folder of the application. 
 
@@ -33,3 +35,9 @@ Running pyinstaller with the provided spec file as argument should include these
 
 ## Other remarks
 The original idea was for the application to use a database for registration management. Due to time contraints the scope had to be scaled back and the choice was made to use a csv file based system.
+
+## Contributing
+The application is not being actively maintained, but feel free to create pull requests if so desired.
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
